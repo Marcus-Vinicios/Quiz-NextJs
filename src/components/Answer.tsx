@@ -11,11 +11,11 @@ interface AnswerProps {
 
 export default function Resposta(props: AnswerProps) {
   const answer = props.data;
-  const respostaRevelada = answer.revelada ? styles.respostaRevelada : '';
+  const respostaRevelada = answer.revelada ? styles.respostaRevelada : "";
 
   return (
     <div onClick={() => { props.respostaFornecida(props.indice) }} className={styles.answer}>
-      <div className={`${respostaRevelada} ${styles.content}`}>
+      <div className={`${styles.content} ${respostaRevelada}`}>
         < div className={styles.front}>
           <div className={styles.letra}
             style={{ backgroundColor: props.bgColor }}

@@ -12,10 +12,6 @@ interface QuizProps {
 
 export default function Questionario(props: QuizProps) {
 
-  if (props.question.respondida) {
-    props.proximoPasso();
-  }
-
   const respostaFornecida = (indice: number) => {
     if (props.question.naoRespondida) {
       props.questaoRespondida(props.question.responderCom(indice));
