@@ -1,6 +1,6 @@
 import questions from "../QuestionsDatabase";
 
-export default (req, res) => {
+export default function questoesPorId(req, res) {
   const questId = +req.query.id;
 
   const selectedQuestions = questions.filter(quest => quest.id === questId);
