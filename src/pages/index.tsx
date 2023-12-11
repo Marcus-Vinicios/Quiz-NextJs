@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 // const BASE_URL = "http://localhost:3000/api"; -> URL local
-const BASE_URL = "https://quiz-next-js-pxvh.vercel.app/api"; // URL da vercel 
+const BASE_URL = "https://quiz-next-js-indol.vercel.app/api"; // URL da vercel 
 
 export default function Home() {
   const router = useRouter();
